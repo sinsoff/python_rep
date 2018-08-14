@@ -1,0 +1,58 @@
+print("Options:")
+print("Type '+' to add num1 to num2")
+print("Type '-' to substrate num1 to num2")
+print("Type '*' to multiply num1 to num2")
+print("Type '/' to devide num1 to num2")
+while True:
+    user_type = input("Type option: ")
+    if user_type == "+":
+        num1 = float(input("Enter a num1:"))
+        num2 = float(input("Enter a num2:"))
+        m = num1 + num2
+        y = "The result is: " + str(m)
+        print(y)
+        quit = input("Do you want to continue Y/N: ")
+        if quit == "N":
+            break
+        else:
+            continue
+    elif user_type == "-":
+        num1 = float(input("Enter a num1:"))
+        num2 = float(input("Enter a num2:"))
+        m = num1 - num2
+        y = "The result is: " + str(m)
+        print(y)
+        quit = input("Do you want to continue Y/N: ")
+        if quit == "N":
+            break
+        else:
+            continue
+    elif user_type == "*":
+        num1 = float(input("Enter a num1:"))
+        num2 = float(input("Enter a num2:"))
+        m = num1 * num2
+        y = "The result is: " + str(m)
+        print(y)
+        quit = input("Do you want to continue Y/N: ")
+        if quit == "N":
+            break
+        else:
+            continue
+    elif user_type == "/":
+        num1 = float(input("Enter a num1:"))
+        num2 = float(input("Enter a num2:"))
+        m = num1 / num2
+        y = "The result is: " + str(m)
+        print(y)
+        quit = input("Do you want to continue Y/N: ")
+        if quit == "N":
+            break
+        elif quit == "Y":
+            continue
+        else:
+            print("Wrong letter... Executing the program...")
+            break
+            
+    else:
+        print("Wrong symbol")
+        continue
